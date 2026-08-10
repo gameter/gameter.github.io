@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>릴케어팜 - 중고 낚시릴 위탁판매</title>
+  <meta name="description" content="중고 낚시릴의 모델별 시세를 확인하고 검수부터 판매, 정산까지 릴케어팜에서 간편하게 위탁하세요.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body style="margin:0;">
+  <div id="seo-content" style="padding:20px; font-family:sans-serif;">
+  <h1>릴케어팜 | 중고 낚시릴 시세조회·위탁판매</h1>
+  <p>릴케어팜은 중고 낚시릴의 모델과 연식, 사이즈별 시세를 확인할 수 있는 서비스입니다. 시마노, 다이와 등 인기 브랜드의 스피닝릴·베이트릴 중고 시세를 무료로 조회해 보세요.</p>
+  <p>사용하지 않는 낚시릴을 릴케어팜에 맡겨보세요. 입고 후 전문가가 릴 상태를 직접 검수하고 판매 전략을 수립하여 상품 등록부터 판매, 정산까지 대신 관리해 드립니다.</p>
+  </div>
+  <iframe id="app-frame" style="width:100vw; height:100vh; border:none;"></iframe>
+  <script>
+    var baseUrl = "https://script.google.com/macros/s/AKfycbwEPmsuLrcuYz__5nyyRsdoaAPpTkoNO1DObTx1FGJhPBtXTvScKdMuKDnpsConulti2w/exec";
+    var params = window.location.search; // 예: ?page=check
+    document.getElementById('app-frame').src = baseUrl + params;
+    document.getElementById('app-frame').onload = function() {
+      document.getElementById('seo-content').style.display = 'none';
+    };
+  </script>
+</body>
+</html>
