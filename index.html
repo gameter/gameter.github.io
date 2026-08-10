@@ -6,6 +6,8 @@
   <meta name="description" content="중고 낚시릴의 모델별 시세를 확인하고 검수부터 판매, 정산까지 릴케어팜에서 간편하게 위탁하세요.">
   <meta name="naver-site-verification" content="034fb87e498c0d754ab61068392cff7d0b2bef69" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  
 <style>
     body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif; background-color: #f4f4f4; }
     .seo-wrap { display: flex; justify-content: center; }
@@ -13,9 +15,9 @@
       width: 100%;
       max-width: 1400px;
       background: #fff;
-      padding: 40px 20px;
+      padding: 30px 24px;
       box-sizing: border-box;
-      text-align: center;
+      text-align: left;
     }
     @media screen and (min-width: 640px) {
       #seo-content {
@@ -25,59 +27,86 @@
         margin-top: 20px;
       }
     }
-    #seo-content h1 {
+    #seo-content .seo-brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       color: #2e7d32;
-      font-size: 22px;
-      margin: 0 0 12px;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 14px;
     }
+    #seo-content h1 {
+      color: #1b1b1b;
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      line-height: 1.4;
+    }
+    #seo-content h1 span { color: #2e7d32; }
     #seo-content .seo-sub {
-      color: #555;
-      font-size: 14px;
-      max-width: 480px;
-      margin: 0 auto 30px;
+      color: #666;
+      font-size: 13px;
+      margin: 0 0 24px;
       line-height: 1.6;
     }
     .seo-cards {
       display: flex;
-      justify-content: center;
-      gap: 16px;
       flex-wrap: wrap;
-      max-width: 720px;
-      margin: 0 auto;
+      gap: 18px;
+      padding-top: 18px;
+      border-top: 1px solid #eee;
     }
     .seo-card {
-      background: #f9f9f9;
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 20px 18px;
-      width: 200px;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
-    .seo-card .icon { font-size: 26px; margin-bottom: 8px; }
-    .seo-card .title { color: #2e7d32; font-weight: bold; font-size: 14px; margin-bottom: 6px; }
-    .seo-card .desc { color: #666; font-size: 12px; line-height: 1.5; }
+    .seo-card .icon {
+      width: 34px; height: 34px; flex-shrink: 0;
+      background: #e8f5e9;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px;
+    }
+    .seo-card .text-group { text-align: left; }
+    .seo-card .title { color: #222; font-weight: bold; font-size: 13px; }
+    .seo-card .desc { color: #888; font-size: 12px; }
   </style>
+
+
+  
 </head>
+<body>
+
+  
 <body>
   <div class="seo-wrap">
     <div id="seo-content">
-      <h1>🎣 릴케어팜 | 중고 낚시릴 시세조회·위탁판매</h1>
+      <div class="seo-brand">🎣 릴케어팜</div>
+      <h1>중고 낚시릴, <span>시세조회부터 위탁판매</span>까지 한 번에</h1>
       <p class="seo-sub">시마노, 다이와 등 인기 브랜드 스피닝릴·베이트릴의 중고 시세를 무료로 조회하고, 검수부터 판매·정산까지 릴케어팜에 간편하게 맡겨보세요.</p>
       <div class="seo-cards">
         <div class="seo-card">
           <div class="icon">📊</div>
-          <div class="title">실시간 시세조회</div>
-          <div class="desc">모델·연식별 중고 시세를 바로 확인하세요.</div>
+          <div class="text-group">
+            <div class="title">실시간 시세조회</div>
+            <div class="desc">모델·연식별 중고 시세 확인</div>
+          </div>
         </div>
         <div class="seo-card">
           <div class="icon">🔍</div>
-          <div class="title">전문가 검수</div>
-          <div class="desc">꼼꼼한 검수로 상태를 정확히 진단합니다.</div>
+          <div class="text-group">
+            <div class="title">전문가 검수</div>
+            <div class="desc">꼼꼼한 상태 진단</div>
+          </div>
         </div>
         <div class="seo-card">
           <div class="icon">💰</div>
-          <div class="title">간편 위탁판매</div>
-          <div class="desc">방문수거부터 정산까지 한번에 해결.</div>
+          <div class="text-group">
+            <div class="title">간편 위탁판매</div>
+            <div class="desc">방문수거부터 정산까지</div>
+          </div>
         </div>
       </div>
     </div>
@@ -89,4 +118,6 @@
     document.getElementById('app-frame').src = baseUrl + params;
   </script>
 </body>
+
+  
 </html>
