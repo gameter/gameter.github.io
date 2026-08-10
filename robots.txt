@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gameter.github.io/sitemap.xml
