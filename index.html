@@ -18,36 +18,36 @@
       background-image: url('https://i.ibb.co/DPpRw5CZ/image.png');
       background-size: cover;
       background-position: center;
-      padding: 24px 20px;
+      padding: 4vw 4vw;
       text-align: left;
     }
     #seo-content .seo-brand {
       color: #2e7d32;
       font-weight: 800;
-      font-size: 15px;
+      font-size: clamp(13px, 4vw, 26px);
       letter-spacing: -0.5px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     #seo-content h1 {
       color: #1b1b1b;
-      font-size: 17px;
       font-weight: 800;
+      font-size: clamp(15px, 4.5vw, 30px);
       margin: 0 0 8px;
       line-height: 1.4;
     }
     #seo-content h1 span { color: #2e7d32; }
     #seo-content .seo-sub {
       color: #444;
-      font-size: 12px;
-      margin: 0 0 16px;
+      font-size: clamp(10px, 2.6vw, 14px);
+      margin: 0 0 14px;
       line-height: 1.6;
       max-width: 640px;
     }
     .seo-cards {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
-      padding-top: 14px;
+      gap: clamp(8px, 2vw, 26px);
+      padding-top: 12px;
       border-top: 1px solid rgba(0,0,0,0.08);
     }
     .seo-card {
@@ -56,16 +56,18 @@
       gap: 8px;
     }
     .seo-card .icon {
-      width: 26px; height: 26px; flex-shrink: 0;
+      width: clamp(22px, 6vw, 38px);
+      height: clamp(22px, 6vw, 38px);
+      flex-shrink: 0;
       background: #ffffff;
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      font-size: 12px;
+      font-size: clamp(10px, 3vw, 17px);
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
     .seo-card .text-group { text-align: left; }
-    .seo-card .title { color: #222; font-weight: bold; font-size: 12px; }
-    .seo-card .desc { color: #555; font-size: 11px; }
+    .seo-card .title { color: #222; font-weight: bold; font-size: clamp(10px, 2.6vw, 14px); }
+    .seo-card .desc { color: #555; font-size: clamp(9px, 2.4vw, 13px); }
 
     @media screen and (min-width: 640px) {
       #seo-content {
@@ -75,22 +77,6 @@
         margin-top: 20px;
         padding: 40px;
       }
-      #seo-content .seo-brand { font-size: 26px; margin-bottom: 16px; }
-      #seo-content h1 { font-size: 30px; margin: 0 0 12px; }
-      #seo-content .seo-sub { font-size: 14px; margin: 0 0 26px; line-height: 1.7; }
-      .seo-cards { gap: 26px; padding-top: 20px; }
-      .seo-card { gap: 12px; }
-      .seo-card .icon { width: 38px; height: 38px; font-size: 17px; }
-      .seo-card .title { font-size: 14px; }
-      .seo-card .desc { font-size: 13px; }
-    }
-
-    @media screen and (min-width: 1024px) {
-      #seo-content .seo-brand { font-size: 30px; }
-      #seo-content h1 { font-size: 36px; }
-      #seo-content .seo-sub { font-size: 15px; }
-      .seo-card .title { font-size: 15px; }
-      .seo-card .desc { font-size: 14px; }
     }
   </style>
 
