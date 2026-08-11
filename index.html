@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
   
-<style>
+  <style>
     body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif; background-color: #f4f4f4; }
     .seo-wrap { display: flex; justify-content: center; }
     #seo-content {
@@ -18,7 +18,7 @@
       background-image: url('https://i.ibb.co/DPpRw5CZ/image.png');
       background-size: cover;
       background-position: center;
-      padding: 40px 30px;
+      padding: 40px 24px;
       text-align: left;
     }
     @media screen and (min-width: 640px) {
@@ -27,59 +27,62 @@
         box-shadow: 0 0 30px rgba(0,0,0,0.15);
         border-radius: 8px;
         margin-top: 20px;
-        padding: 50px 40px;
+        padding: 40px;
       }
     }
     #seo-content .seo-brand {
-      display: flex;
-      align-items: center;
-      gap: 8px;
       color: #2e7d32;
-      font-weight: bold;
-      font-size: 16px;
-      margin-bottom: 14px;
+      font-weight: 800;
+      font-size: 20px;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
     }
-    #seo-content .seo-brand img { height: 22px; width: auto; vertical-align: middle; }
     #seo-content h1 {
       color: #1b1b1b;
-      font-size: 24px;
+      font-size: 30px;
       font-weight: 800;
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       line-height: 1.4;
-      max-width: 600px;
     }
     #seo-content h1 span { color: #2e7d32; }
     #seo-content .seo-sub {
       color: #444;
-      font-size: 13px;
-      margin: 0 0 24px;
-      line-height: 1.6;
-      max-width: 560px;
+      font-size: 14px;
+      margin: 0 0 26px;
+      line-height: 1.7;
+      max-width: 640px;
     }
     .seo-cards {
       display: flex;
       flex-wrap: wrap;
-      gap: 18px;
-      padding-top: 18px;
+      gap: 26px;
+      padding-top: 20px;
       border-top: 1px solid rgba(0,0,0,0.08);
-      max-width: 600px;
     }
     .seo-card {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
     .seo-card .icon {
-      width: 34px; height: 34px; flex-shrink: 0;
+      width: 38px; height: 38px; flex-shrink: 0;
       background: #ffffff;
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      font-size: 15px;
+      font-size: 17px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
     .seo-card .text-group { text-align: left; }
-    .seo-card .title { color: #222; font-weight: bold; font-size: 13px; }
-    .seo-card .desc { color: #555; font-size: 12px; }
+    .seo-card .title { color: #222; font-weight: bold; font-size: 14px; }
+    .seo-card .desc { color: #555; font-size: 13px; }
+
+    @media screen and (min-width: 1024px) {
+      #seo-content .seo-brand { font-size: 22px; }
+      #seo-content h1 { font-size: 36px; }
+      #seo-content .seo-sub { font-size: 15px; }
+      .seo-card .title { font-size: 15px; }
+      .seo-card .desc { font-size: 14px; }
+    }
   </style>
 
   
@@ -90,10 +93,7 @@
 <body>
   <div class="seo-wrap">
     <div id="seo-content">
-      <div class="seo-brand">
-        <img src="https://i.ibb.co/TxBZGZr3/image.png" alt="릴케어팜 로고">
-        릴케어팜
-      </div>
+      <div class="seo-brand">릴케어팜</div>
       <h1>먼저, <span>내 릴 시세</span>를 알아볼까요?</h1>
       <p class="seo-sub">중고 낚시릴 시세조회부터 위탁판매까지 한 번에 해결하는 중고 릴 전문 플랫폼. 시마노, 다이와 등 인기 브랜드 스피닝릴·베이트릴의 중고 시세를 무료로 조회하고, 검수부터 판매·정산까지 릴케어팜에 간편하게 맡겨보세요.</p>
       <div class="seo-cards">
@@ -128,6 +128,5 @@
     document.getElementById('app-frame').src = baseUrl + params;
   </script>
 </body>
-
   
 </html>
